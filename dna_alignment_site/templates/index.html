@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de DNA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Alinhamento de Sequências de DNA</h1>
+        <form id="dnaForm">
+            <label for="seq1">Sequência 1:</label>
+            <textarea id="seq1" name="seq1" placeholder="Digite a primeira sequência de DNA" required></textarea>
+            
+            <label for="seq2">Sequência 2:</label>
+            <textarea id="seq2" name="seq2" placeholder="Digite a segunda sequência de DNA" required></textarea>
+            
+            <button type="submit">Alinhar</button>
+        </form>
+        
+        <div id="resultado">
+            <h2>Resultado do Alinhamento:</h2>
+            <pre id="alinhamento1"></pre>
+            <pre id="alinhamento2"></pre>
+        </div>
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
